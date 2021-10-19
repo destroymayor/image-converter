@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Head from 'next/head';
 
 import { useRecoilValue } from 'recoil';
@@ -13,24 +12,21 @@ import List from '@/components/List';
 const Home = () => {
   const convertFiles = useRecoilValue(convertFilesState);
 
-  const [selectFiles, setSelectFiles] = useState([]);
-
   return (
     <>
       <Head>
         <title>Image Converter</title>
       </Head>
 
-      <div className="flex flex-col justify-center w-full max-w-4xl px-2 m-auto mt-6 gap-y-4">
+      <div className="flex flex-col justify-center w-full max-w-4xl px-2 m-auto gap-y-4">
         <Header />
-        <DropFiles onChange={(files) => setSelectFiles(files)} />
+        <DropFiles />
 
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-4">
           <SelectType />
-          {selectFiles.length > 0 && <span>{selectFiles.length} pictures have been selected</span>}
+          <Toolbar />
         </div>
 
-        <Toolbar selectFiles={selectFiles} />
         <List data={convertFiles.data} />
       </div>
     </>

@@ -1,14 +1,6 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "prettier",
-    "plugin:jsx-a11y/recommended"
-  ],
-  "plugins": [
-    "prettier",
-    "react-hooks",
-    "jsx-a11y"
-  ],
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["prettier", "react-hooks"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "requireConfigFile": false
@@ -23,10 +15,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "react/prop-types": 0,
@@ -38,15 +27,10 @@
     "import/no-unresolved": [
       2,
       {
-        "ignore": [
-          "^@?"
-        ]
+        "ignore": ["^@?"]
       }
     ],
-    "import/imports-first": [
-      "error",
-      "absolute-first"
-    ],
+    "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
     "prettier/prettier": [
       "error",

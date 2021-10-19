@@ -1,7 +1,7 @@
 const Header = () => {
   return (
-    <header className="flex flex-wrap items-center justify-between">
-      <h1 className="text-3xl">Image Converter</h1>
+    <header className="flex flex-wrap items-center justify-between mt-6">
+      <h1 className="text-xl sm:text-3xl">Image Converter</h1>
       <a href="https://github.com/destroymayor/convert-image-to-webp">
         <button className="p-2 transition duration-150 ease-in-out rounded-full hover:bg-gray-500">
           <svg className="w-8 h-8" stroke="currentColor" fill="currentColor" viewBox="0 0 496 512">
