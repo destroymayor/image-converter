@@ -34,7 +34,7 @@ const SelectType = () => {
         {fileTypes.map((item) => (
           <li
             key={item.label}
-            className="flex flex-col p-2 mx-1 transition duration-200 ease-in-out rounded-md hover:bg-black"
+            className="flex flex-col p-2 mx-1 transition duration-200 ease-in-out rounded-md cursor-pointer hover:bg-black"
             onClick={() => handleChange(item)}
           >
             <div>{item.label}</div>
