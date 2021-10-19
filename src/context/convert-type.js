@@ -4,6 +4,7 @@ export const convertTypeState = atom({
   key: 'convertTypeState',
   default: {
     label: 'PNG',
+    description: 'Portable Network Graphics',
     suffix: 'png',
     type: 'image/png',
   },
