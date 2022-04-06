@@ -4,7 +4,7 @@ import { useRecoilValue } from 'recoil';
 import { convertFilesState } from '@/context/convert-files';
 
 import Header from '@/components/Header';
-import SelectType from '@/components/SelectType';
+import Select from '@/components/Select';
 import DropFiles from '@/components/DropFiles';
 import Toolbar from '@/components/Toolbar';
 import List from '@/components/List';
@@ -23,7 +23,7 @@ const Home = () => {
         <DropFiles />
 
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <SelectType />
+          <Select />
           <Toolbar />
         </div>
 

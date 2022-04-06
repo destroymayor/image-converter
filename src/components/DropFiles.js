@@ -1,6 +1,6 @@
 import { useRecoilState } from 'recoil';
 import { selectFilesState } from '@/context/convert-files';
-import formatBytes from '@/utils/formatBytes';
+import formatBytes from '@/utils/format-bytes';
 
 import { UploadIcon } from '@heroicons/react/outline';
 

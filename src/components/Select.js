@@ -7,7 +7,7 @@ import useOnClickOutside from '@/hooks/use-on-click-outside';
 
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/outline';
 
-const SelectType = () => {
+const Select = () => {
   const ref = useRef();
   const [open, setOpen] = useState(false);
 
@@ -56,4 +56,4 @@ const SelectType = () => {
   );
 };
 
-export default SelectType;
+export default Select;
